@@ -1,19 +1,12 @@
-import Head from 'next/head'
-import GoogleAdSenseAdUnit, { adUnitIdMap } from '../components/GoogleAdSenseAdUnit'
+import AppLayout from '../components/AppLayout'
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <div>
-      <Head>
-        <title>Converter | Lation</title>
-        <link rel="icon" href="/favicon.ico" />
-        <script
-          data-ad-client="ca-pub-3783614920655833"
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
-      </Head>
-      <h1>Welcome to lation converter!</h1>
-      <GoogleAdSenseAdUnit adUnitId={adUnitIdMap.adunit_converter_index_banner} />
-    </div>
+    <AppLayout>
+      <p>擁有全台最完善的成人轉換服務，24小時在線等候，免費試用，即刻撥打xxx-xxxx-xxxx</p>
+      <img src="https://media.giphy.com/media/gtoONZQegPnPy/giphy.gif" />
+    </AppLayout>
   )
 }
+
+export default HomePage

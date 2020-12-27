@@ -1,7 +1,7 @@
-import '../styles/globals.css'
+import '../styles/global.css'
 
-function MyApp({ Component, pageProps }) {
+const LationApp = ({ Component, pageProps }) => {
   return <Component {...pageProps} />
 }
 
-export default MyApp
+export default LationApp

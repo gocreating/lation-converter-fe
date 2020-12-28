@@ -4,7 +4,7 @@ import Head from 'next/head'
 const CLIENT_ID = 'ca-pub-3783614920655833'
 
 export const adUnitIdMap = {
-  adunit_converter_index_banner: '1922322690',
+  adunit_converter_banner: '1922322690',
 }
 
 export const GoogleAdSenseHeader = () => {
@@ -36,5 +36,5 @@ export const GoogleAdSenseAdUnit = ({ adUnitId }) => {
 }
 
 GoogleAdSenseAdUnit.defaultProps = {
-  adUnitId: adUnitIdMap.adunit_converter_index_banner,
+  adUnitId: adUnitIdMap.adunit_converter_banner,
 }

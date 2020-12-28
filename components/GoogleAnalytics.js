@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { GA_TRACKING_ID } from '../utils/gtag'
+import { GA_TRACKING_ID } from '../utils/config'
 
 export const GoogleAnalyticsHeader = () => {
   return (

@@ -1,5 +1,5 @@
 // https://medium.com/frontend-digest/using-nextjs-with-google-analytics-and-typescript-620ba2359dea
-export const GA_TRACKING_ID = 'G-Q8TG6TMFD8'
+import { GA_TRACKING_ID } from './config'
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url) => {

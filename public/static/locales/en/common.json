@@ -1,10 +1,14 @@
 {
+  "site": {
+    "titleSuffix": " | Converter"
+  },
   "navbar": {
     "title": "Online Converter",
     "base64": "Base64",
     "pricing": "Pricing"
   },
   "home": {
+    "title": "Online Converter",
     "description": "The most complete online coverter ever. Host 24/7 online and free."
   },
   "base64": {

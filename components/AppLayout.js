@@ -3,13 +3,15 @@ import Container from 'react-bootstrap/Container'
 import { GoogleAdSenseHeader, GoogleAdSenseAdUnit, adUnitIdMap } from '../components/GoogleAdSense'
 import { GoogleAnalyticsHeader } from './GoogleAnalytics'
 import Navigation from './Navigation'
+import { withTranslation } from '../i18n'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-const AppLayout = ({ title, children }) => {
+const AppLayout = ({ t, title, titleSuffix, children }) => {
+  titleSuffix = titleSuffix || t('site.titleSuffix')
   return (
     <>
       <Head>
-        <title>{`${title} | Converter`}</title>
+        <title>{`${title}${titleSuffix}`}</title>
         <link rel="icon" href="/logo.png" />
       </Head>
       <GoogleAdSenseHeader />
@@ -23,4 +25,8 @@ const AppLayout = ({ title, children }) => {
   )
 }
 
-export default AppLayout
+AppLayout.getInitialProps = async () => ({
+  namespacesRequired: ['common'],
+})
+
+export default withTranslation('common')(AppLayout)

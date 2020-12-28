@@ -3,7 +3,7 @@ import { withTranslation } from '../i18n'
 
 const HomePage = ({ t }) => {
   return (
-    <AppLayout>
+    <AppLayout title={t('home.title')} titleSuffix="">
       <p>{t('home.description')}</p>
       <img src="https://media.giphy.com/media/gtoONZQegPnPy/giphy.gif" />
     </AppLayout>

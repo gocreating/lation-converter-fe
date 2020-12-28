@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "title": "全台最大線上成人轉換服務平台",
+    "base64": "Base64",
+    "pricing": "定價"
+  },
+  "home": {
+    "description": "擁有全台最完善的成人轉換服務，24小時在線等候，免費使用"
+  },
+  "base64": {
+    "title": "Base64",
+    "decoded": "原文",
+    "encoded": "Base64 編碼"
+  }
+}

@@ -2,16 +2,17 @@ import { useState } from 'react'
 import Form from 'react-bootstrap/Form'
 import { encode, decode } from 'js-base64'
 import AppLayout from '../components/AppLayout'
+import { withTranslation } from '../i18n'
 
-const Base64Page = () => {
+const Base64Page = ({ t }) => {
   const [text, setText] = useState('')
   const [base64, setBase64] = useState('')
   return (
-    <AppLayout title="Base64">
-      <h3>Base64轉換服務</h3>
+    <AppLayout title={t('base64.title')}>
+      <h3>{t('base64.title')}</h3>
       <Form>
         <Form.Group controlId="rawContent">
-          <Form.Label>明文</Form.Label>
+          <Form.Label>{t('base64.decoded')}</Form.Label>
           <Form.Control
             as="textarea"
             rows={5}
@@ -27,7 +28,7 @@ const Base64Page = () => {
           />
         </Form.Group>
         <Form.Group controlId="base64Content">
-          <Form.Label>Base64編碼</Form.Label>
+          <Form.Label>{t('base64.encoded')}</Form.Label>
           <Form.Control
             as="textarea"
             rows={5}
@@ -47,4 +48,9 @@ const Base64Page = () => {
   )
 }
 
-export default Base64Page
+
+Base64Page.getInitialProps = async () => ({
+  namespacesRequired: ['common'],
+})
+
+export default withTranslation('common')(Base64Page)

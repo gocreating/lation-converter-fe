@@ -1,12 +1,17 @@
 import AppLayout from '../components/AppLayout'
+import { withTranslation } from '../i18n'
 
-const HomePage = () => {
+const HomePage = ({ t }) => {
   return (
     <AppLayout>
-      <p>擁有全台最完善的成人轉換服務，24小時在線等候，免費試用，即刻撥打xxx-xxxx-xxxx</p>
+      <p>{t('home.description')}</p>
       <img src="https://media.giphy.com/media/gtoONZQegPnPy/giphy.gif" />
     </AppLayout>
   )
 }
 
-export default HomePage
+HomePage.getInitialProps = async () => ({
+  namespacesRequired: ['common'],
+})
+
+export default withTranslation('common')(HomePage)

@@ -15,5 +15,13 @@
     "title": "Base64",
     "decoded": "Decoded",
     "encoded": "Encoded"
+  },
+  "404": {
+    "title": "404",
+    "description": "This page could not be found."
+  },
+  "error": {
+    "title": "Error",
+    "description": "Something weng wrong."
   }
 }

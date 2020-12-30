@@ -8,7 +8,7 @@ import { adUnitIdMap } from '../utils/config'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const AppLayout = ({ t, title, titleSuffix, children }) => {
-  titleSuffix = titleSuffix || t('site.titleSuffix')
+  titleSuffix = titleSuffix === false ? '' : t('site.titleSuffix')
   return (
     <>
       <Head>

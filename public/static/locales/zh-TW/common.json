@@ -15,5 +15,13 @@
     "title": "Base64",
     "decoded": "原文",
     "encoded": "Base64 編碼"
+  },
+  "404": {
+    "title": "404",
+    "description": "找不到頁面"
+  },
+  "error": {
+    "title": "錯誤",
+    "description": "發生無法預期的錯誤"
   }
 }

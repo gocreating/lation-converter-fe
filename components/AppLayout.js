@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Container from 'react-bootstrap/Container'
 import { Trans } from 'react-i18next'
-import { FacebookMessengerHeader, FacebookMessengerChatPlugin } from './FacebookMessenger'
-import { GoogleAdSenseHeader, GoogleAdSenseAdUnit } from '../components/GoogleAdSense'
-import { GoogleAnalyticsHeader } from './GoogleAnalytics'
+import { FacebookMessengerChatPlugin } from './FacebookMessenger'
+import { GoogleAdSenseAdUnit } from '../components/GoogleAdSense'
 import Navigation from './Navigation'
 import { withTranslation } from '../i18n'
 import { adUnitIdMap } from '../utils/config'
@@ -17,9 +16,6 @@ const AppLayout = ({ t, title, titleSuffix, children }) => {
         <title>{`${title}${titleSuffix}`}</title>
         <link rel="icon" href="/logo.png" />
       </Head>
-      <FacebookMessengerHeader />
-      <GoogleAdSenseHeader />
-      <GoogleAnalyticsHeader />
       <Navigation />
       <Container>
         {children}

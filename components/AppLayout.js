@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Container from 'react-bootstrap/Container'
+import { Trans } from 'react-i18next'
 import { GoogleAdSenseHeader, GoogleAdSenseAdUnit } from '../components/GoogleAdSense'
 import { GoogleAnalyticsHeader } from './GoogleAnalytics'
 import Navigation from './Navigation'
@@ -23,6 +24,24 @@ const AppLayout = ({ t, title, titleSuffix, children }) => {
       </Container>
       <Container style={{ marginTop: '2rem' }}>
         <GoogleAdSenseAdUnit adUnitId={adUnitIdMap.adunit_converter_banner} />
+      </Container>
+      <Container style={{ marginTop: '2rem' }}>
+        <hr />
+        <p className="text-center text-secondary text-nowrap">
+          <Trans
+            t={t}
+            i18nKey="footer.poweredBy"
+            components={{
+              brand: (
+                <a
+                  className="text-secondary"
+                  href="https://lation.app/"
+                  target="_blank"
+                />
+              ),
+            }}
+          />
+        </p>
       </Container>
     </>
   )

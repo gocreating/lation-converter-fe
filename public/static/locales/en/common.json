@@ -7,6 +7,9 @@
     "base64": "Base64",
     "pricing": "Pricing"
   },
+  "footer": {
+    "poweredBy": "Powered by <brand>Lation</brand>"
+  },
   "home": {
     "title": "Online Converter",
     "description": "The most complete online coverter ever. Host 24/7 online and free."

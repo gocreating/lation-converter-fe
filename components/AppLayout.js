@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Container from 'react-bootstrap/Container'
 import { Trans } from 'react-i18next'
-import Chatfuel from './Chatfuel'
+import { FacebookMessengerHeader, FacebookMessengerChatPlugin } from './FacebookMessenger'
 import { GoogleAdSenseHeader, GoogleAdSenseAdUnit } from '../components/GoogleAdSense'
 import { GoogleAnalyticsHeader } from './GoogleAnalytics'
 import Navigation from './Navigation'
@@ -17,16 +17,16 @@ const AppLayout = ({ t, title, titleSuffix, children }) => {
         <title>{`${title}${titleSuffix}`}</title>
         <link rel="icon" href="/logo.png" />
       </Head>
+      <FacebookMessengerHeader />
       <GoogleAdSenseHeader />
       <GoogleAnalyticsHeader />
       <Navigation />
       <Container>
         {children}
       </Container>
-      <Container style={{ marginTop: '2rem' }}>
+      <Container style={{ marginTop: '2rem', overflow: 'auto' }}>
         <GoogleAdSenseAdUnit adUnitId={adUnitIdMap.adunit_converter_banner} />
       </Container>
-      <Chatfuel />
       <Container style={{ marginTop: '2rem' }}>
         <hr />
         <p className="text-center text-secondary text-nowrap">
@@ -45,6 +45,7 @@ const AppLayout = ({ t, title, titleSuffix, children }) => {
           />
         </p>
       </Container>
+      <FacebookMessengerChatPlugin />
     </>
   )
 }

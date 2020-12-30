@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Container from 'react-bootstrap/Container'
 import { Trans } from 'react-i18next'
 import { FacebookMessengerHeader, FacebookMessengerChatPlugin } from './FacebookMessenger'
+import { GoogleAnalyticsHeader } from './GoogleAnalytics'
 import { GoogleAdSenseAdUnit } from '../components/GoogleAdSense'
 import Navigation from './Navigation'
 import { withTranslation } from '../i18n'
@@ -16,6 +17,7 @@ const AppLayout = ({ t, title, titleSuffix, children }) => {
         <title>{`${title}${titleSuffix}`}</title>
         <link rel="icon" href="/logo.png" />
       </Head>
+      <GoogleAnalyticsHeader />
       <FacebookMessengerHeader />
       <Navigation />
       <Container>

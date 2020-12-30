@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import { FacebookRoot } from '../components/FacebookMessenger'
 import { GoogleAdSenseHeader } from '../components/GoogleAdSense'
-import { GoogleAnalyticsHeader } from '../components/GoogleAnalytics'
 
 class LationDocument extends Document {
   static async getInitialProps(ctx) {
@@ -11,11 +11,10 @@ class LationDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-          <GoogleAdSenseHeader />
-          <GoogleAnalyticsHeader />
-        </Head>
+        <Head />
+        <GoogleAdSenseHeader />
         <body>
+          <FacebookRoot />
           <Main />
           <NextScript />
         </body>

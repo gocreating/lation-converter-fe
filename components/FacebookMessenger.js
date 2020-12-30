@@ -3,9 +3,16 @@ import { I18nContext } from 'next-i18next'
 import ErrorBoundary from './ErrorBoundary'
 import { FACEBOOK_PAGE_ID } from '../utils/config'
 
+export const FacebookRoot = () => {
+  return (
+    <div id="fb-root" />
+  )
+}
+
 export const FacebookMessengerHeader = () => {
   const { i18n: { language } } = useContext(I18nContext)
   useEffect(() => {
+    // Load Facebook SDK for JavaScript
     window.fbAsyncInit = function() {
       FB.init({
         xfbml: true,
@@ -21,11 +28,7 @@ export const FacebookMessengerHeader = () => {
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   }, [language])
-
-  // Load Facebook SDK for JavaScript
-  return (
-    <div id="fb-root" />
-  )
+  return null
 }
 
 export const FacebookMessengerChatPlugin = () => {

@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { FacebookMessengerHeader } from '../components/FacebookMessenger'
 import { GoogleAdSenseHeader } from '../components/GoogleAdSense'
 import { GoogleAnalyticsHeader } from '../components/GoogleAnalytics'
 
@@ -17,7 +16,6 @@ class LationDocument extends Document {
           <GoogleAnalyticsHeader />
         </Head>
         <body>
-          <FacebookMessengerHeader />
           <Main />
           <NextScript />
         </body>

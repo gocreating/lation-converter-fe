@@ -1,32 +1,30 @@
+import { useContext, useEffect } from 'react'
+import { I18nContext } from 'next-i18next'
 import ErrorBoundary from './ErrorBoundary'
 import { FACEBOOK_PAGE_ID } from '../utils/config'
 
 export const FacebookMessengerHeader = () => {
+  const { i18n: { language } } = useContext(I18nContext)
+  useEffect(() => {
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml: true,
+        version: 'v9.0'
+      });
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = `https://connect.facebook.net/${language}/sdk/xfbml.customerchat.js`;
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  }, [language])
+
   // Load Facebook SDK for JavaScript
   return (
-    <div suppressHydrationWarning>
-      <div id="fb-root" />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.fbAsyncInit = function() {
-              FB.init({
-                xfbml            : true,
-                version          : 'v9.0'
-              });
-            };
-
-            (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-          `
-        }}
-      />
-    </div>
+    <div id="fb-root" />
   )
 }
 

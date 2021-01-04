@@ -25,6 +25,7 @@ const Base64Page = ({ t }) => {
               }
             }}
             value={text}
+            placeholder={t('base64.placeholder')}
           />
         </Form.Group>
         <Form.Group controlId="base64Content">
@@ -41,6 +42,7 @@ const Base64Page = ({ t }) => {
               }
             }}
             value={base64}
+            placeholder={t('base64.placeholder')}
           />
         </Form.Group>
       </Form>

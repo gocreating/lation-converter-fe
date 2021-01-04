@@ -38,8 +38,8 @@ const Navigation = ({ t }) => {
               <Link href="/base64" passHref>
                 <Nav.Link>{t('navbar.base64')}</Nav.Link>
               </Link>
-              <Link href="/pricing" passHref>
-                <Nav.Link disabled>{t('navbar.pricing')}</Nav.Link>
+              <Link href="/temperature" passHref>
+                <Nav.Link>{t('navbar.temperature')}</Nav.Link>
               </Link>
             </Nav>
           </Navbar.Collapse>

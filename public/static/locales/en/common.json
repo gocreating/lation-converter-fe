@@ -5,7 +5,7 @@
   "navbar": {
     "title": "Online Converter",
     "base64": "Base64",
-    "pricing": "Pricing"
+    "temperature": "Temperature"
   },
   "footer": {
     "poweredBy": "Powered by <brand>Lation</brand>"
@@ -17,7 +17,13 @@
   "base64": {
     "title": "Base64",
     "decoded": "Decoded",
-    "encoded": "Encoded"
+    "encoded": "Encoded",
+    "placeholder": "Type or paste here directly to convert"
+  },
+  "temperature": {
+    "title": "Temperature",
+    "celsius": "Celsius",
+    "fahrenheit": "Fahrenheit"
   },
   "404": {
     "title": "404",

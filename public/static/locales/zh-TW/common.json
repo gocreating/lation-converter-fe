@@ -5,7 +5,7 @@
   "navbar": {
     "title": "全台最大線上轉換服務平台",
     "base64": "Base64",
-    "pricing": "定價"
+    "temperature": "溫度"
   },
   "footer": {
     "poweredBy": "<brand>Lation</brand> 製作"
@@ -17,7 +17,13 @@
   "base64": {
     "title": "Base64",
     "decoded": "原文",
-    "encoded": "Base64 編碼"
+    "encoded": "Base64 編碼",
+    "placeholder": "直接輸入或貼上即可轉換"
+  },
+  "temperature": {
+    "title": "溫度",
+    "celsius": "攝氏",
+    "fahrenheit": "華氏"
   },
   "404": {
     "title": "404",

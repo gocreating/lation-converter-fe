@@ -1,6 +1,8 @@
 {
   "site": {
-    "titleSuffix": " | Converter"
+    "titleSuffix": " | Converter",
+    "title": "Online Converter",
+    "description": "The most complete online coverter ever. Host 24/7 online and free"
   },
   "navbar": {
     "title": "Online Converter",

@@ -1,6 +1,8 @@
 {
   "site": {
-    "titleSuffix": " | 轉換服務"
+    "titleSuffix": " | 轉換服務",
+    "title": "全台最大線上轉換服務平台",
+    "description": "擁有全台最完善的轉換服務，24小時在線等候，免費使用"
   },
   "navbar": {
     "title": "全台最大線上轉換服務平台",

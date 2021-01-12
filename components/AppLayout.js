@@ -46,6 +46,9 @@ const AppLayout = ({ t, title, titleSuffix, children }) => {
           'https://lation.app/logo.png',
         ]}
         keywords={t('site.keywords')}
+        offers={[]}
+        reviews={[]}
+        aggregateRating={{}}
       />
       <GoogleAnalyticsHeader />
       <FacebookMessengerHeader />

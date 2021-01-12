@@ -48,7 +48,10 @@ const AppLayout = ({ t, title, titleSuffix, children }) => {
         keywords={t('site.keywords')}
         offers={[]}
         reviews={[]}
-        aggregateRating={{ reviewCount: 0 }}
+        aggregateRating={{
+          ratingValue: '5',
+          reviewCount: '1',
+        }}
       />
       <GoogleAnalyticsHeader />
       <FacebookMessengerHeader />

@@ -1,29 +1,34 @@
 {
   "site": {
-    "titleSuffix": " | Converter",
-    "title": "Online Converter",
-    "description": "The most complete online coverter ever. Host 24/7 online and free"
+    "titleSuffix": " | Free Online Converter",
+    "title": "Free Online Converter",
+    "description": "The most handy online converter ever for free",
+    "keywords": "Temperature Conversion,Base64 Text Conversion,Base64 Encode Decode,Free Online Converter,Free Online Conversion Service"
   },
   "navbar": {
-    "title": "Online Converter",
-    "base64": "Base64",
-    "temperature": "Temperature"
+    "toggle": {
+      "bottom": "Select Converter"
+    },
+    "title": "Free Online Converter",
+    "common": "Common Converters",
+    "base64": "Base64 Encode and Decode",
+    "temperature": "Temperature Conversion"
   },
   "footer": {
     "poweredBy": "Powered by <brand>Lation</brand>"
   },
   "home": {
-    "title": "Online Converter",
-    "description": "The most complete online coverter ever. Host 24/7 online and free."
+    "title": "Free Online Converter",
+    "description": "The most handy online converter ever for free."
   },
   "base64": {
-    "title": "Base64",
+    "title": "Base64 Encode and Decode",
     "decoded": "Decoded",
     "encoded": "Encoded",
     "placeholder": "Type or paste here directly to convert"
   },
   "temperature": {
-    "title": "Temperature",
+    "title": "Temperature Conversion",
     "celsius": "Celsius",
     "fahrenheit": "Fahrenheit"
   },

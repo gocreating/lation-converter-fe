@@ -8,7 +8,8 @@ const Navigation = ({ t }) => {
   return (
     <>
       <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav-top" />
+        <Navbar.Collapse id="responsive-navbar-nav-top">
           <Nav className="mr-auto">
             <Link href="/" passHref>
               <Navbar.Brand>
@@ -32,9 +33,14 @@ const Navigation = ({ t }) => {
       </Navbar>
       <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" style={{ marginBottom: '2rem' }}>
         <Container>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mr-auto">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav-bottom">
+            {t('navbar.toggle.bottom')}
+          </Navbar.Toggle>
+          <Navbar.Collapse id="responsive-navbar-nav-bottom">
+            <Nav>
+              <Link href="/" passHref>
+                <Nav.Link>{t('navbar.common')}</Nav.Link>
+              </Link>
               <Link href="/base64" passHref>
                 <Nav.Link>{t('navbar.base64')}</Nav.Link>
               </Link>

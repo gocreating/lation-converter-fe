@@ -1,4 +1,4 @@
-import { NextSeo, RecipeJsonLd } from 'next-seo'
+import { NextSeo, ProductJsonLd } from 'next-seo'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Container from 'react-bootstrap/Container'
@@ -37,16 +37,14 @@ const AppLayout = ({ t, title, titleSuffix, children }) => {
           content: t('site.keywords'),
         }]}
       />
-      <RecipeJsonLd
-        name={t('site.title')}
+      <ProductJsonLd
+        productName={t('site.title')}
         description={t('site.description')}
-        authorName="Lation"
+        brand="Lation"
         images={[
           'https://converter.lation.app/logo.png',
           'https://lation.app/logo.png',
         ]}
-        ingredients={[]}
-        instructions={[]}
         keywords={t('site.keywords')}
       />
       <GoogleAnalyticsHeader />

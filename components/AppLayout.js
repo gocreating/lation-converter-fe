@@ -41,6 +41,10 @@ const AppLayout = ({ t, title, titleSuffix, children }) => {
         name={t('site.title')}
         description={t('site.description')}
         authorName="Lation"
+        images={[
+          'https://converter.lation.app/logo.png',
+          'https://lation.app/logo.png',
+        ]}
         ingredients={[]}
         instructions={[]}
         keywords={t('site.keywords')}

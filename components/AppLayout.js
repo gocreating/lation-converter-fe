@@ -18,10 +18,6 @@ const AppLayout = ({ t, title, titleSuffix, children }) => {
   titleSuffix = titleSuffix === false ? '' : t('site.titleSuffix')
   return (
     <>
-      <Head>
-        <title>{`${title}${titleSuffix}`}</title>
-        <link rel="icon" href="/logo.png" />
-      </Head>
       <NextSeo
         title={t('site.title')}
         description={t('site.description')}
@@ -37,6 +33,10 @@ const AppLayout = ({ t, title, titleSuffix, children }) => {
           content: t('site.keywords'),
         }]}
       />
+      <Head>
+        <title>{`${title}${titleSuffix}`}</title>
+        <link rel="icon" href="/logo.png" />
+      </Head>
       <ProductJsonLd
         productName={t('site.title')}
         description={t('site.description')}
